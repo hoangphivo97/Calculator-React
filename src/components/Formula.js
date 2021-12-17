@@ -3,7 +3,11 @@ import { Textfit } from "react-textfit";
 
 class Formula extends React.Component {
   render() {
-    return <Textfit className="screen" mode="single" max={70}></Textfit>;
+    return (
+      <Textfit className="prev-value" mode="single" max={70}>
+        {this.props.prevValue}
+      </Textfit>
+    );
   }
 }
 
